@@ -1,4 +1,5 @@
 package com.example.recyclerview;
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -36,7 +37,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // send selected contact in callback
+
                     listener.onContactSelected(contactListFiltered.get(getAdapterPosition()));
                 }
             });
